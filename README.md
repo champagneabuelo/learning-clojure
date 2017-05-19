@@ -1,36 +1,8 @@
-# learning-clojure
+# Clojure Exercises Repo
 
-FIXME: description
+The repository contains solutions to exercises from the book [Clojure for the Brave and True.](http://www.braveclojure.com/)
+Solutions for each chapter of the book can be found in the src directory.
 
-## Installation
-
-Download from http://example.com/FIXME.
-
-## Usage
-
-FIXME: explanation
-
-    $ java -jar learning-clojure-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2017 FIXME
-
+ 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
