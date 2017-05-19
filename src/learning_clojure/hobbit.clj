@@ -29,6 +29,18 @@
    :size (:size part)}
 )
 
+(defn sbp-with-reduce 
+  "expects a sequence of maps that have a :name and :size, less code and more readable!"
+  [asym-body-parts]
+  (reduce (fn [final-body-parts part]
+            (into final-body-parts (set [part (matching-part part)])
+            )
+          )
+          []
+          asym-body-parts
+  )
+) 
+
 (defn symmetrize-body-parts
   "expects a sequence of maps that have a :name and :size"
   [asym-body-parts]
@@ -47,17 +59,6 @@
   )
 )
 
-(defn sbp-with-reduce 
-  "expects a sequence of maps that have a :name and :size, less code and more readable!"
-  [asym-body-parts]
-  (reduce (fn [final-body-parts part]
-            (into final-body-parts (set [part (matching-part part)])
-            )
-          )
-          []
-          asym-body-parts
-  )
-) 
 
 (defn hit
   [asym-body-parts]
